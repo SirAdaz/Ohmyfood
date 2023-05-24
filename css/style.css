@@ -1,0 +1,163 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 20px;
+}
+
+.boutton {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  padding: 15px;
+  border-radius: 25px;
+  color: #fff;
+  transition: all-- 400ms;
+}
+.boutton:hover {
+  transform: scale(1.15);
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
+.logo_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  font-weight: bold;
+}
+.location i {
+  padding-right: 15px;
+}
+
+.explore_restaurants {
+  background-color: #f2f2f2;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.explanation {
+  margin: 50px 0 25px 20px;
+}
+.explanation .panels {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  margin: 10px 20px 25px 10px;
+}
+.explanation .panels .panels_number {
+  background-color: #9356DC;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  height: 24px;
+  width: 24px;
+  margin-left: -10px;
+}
+.explanation .panels .panels_icon {
+  color: #9356DC;
+  margin: 23px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.restaurant .title_restaurant {
+  padding: 20px 0 0 20px;
+}
+.restaurant .restaurant_choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.restaurant .container_panel_restaurant {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 17px 17px 0 17px;
+}
+.restaurant .img_restaurant_1 {
+  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  height: 120px;
+  width: 100%;
+  margin: 0;
+}
+.restaurant .img_restaurant_2 {
+  background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  height: 120px;
+  width: 100%;
+  margin: 0;
+}
+.restaurant .img_restaurant_3 {
+  background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  height: 150px;
+  width: 100%;
+  margin: 0;
+}
+.restaurant .img_restaurant_4 {
+  background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  height: 120px;
+  width: 100%;
+  margin: 0;
+}
+.restaurant .description_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+}
+.restaurant .restaurant_heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_footer {
+  color: #fff;
+}
+
+.footer_link_block {
+  display: flex;
+  flex-direction: column;
+}
+.footer_link_block .footer_link {
+  padding: 7px;
+}
+.footer_link_block .footer_link .footer_icon {
+  padding-right: 10px;
+}
