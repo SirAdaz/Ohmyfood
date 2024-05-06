@@ -1,0 +1,170 @@
+.header__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.header__block__arrow {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  bottom: 24px;
+}
+.header__block__logo {
+  padding: 15px 0 5px 0;
+}
+
+.menu {
+  background-color: #f7f7f7;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
+  padding: 0 15px 40px 15px;
+}
+.menu__header {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+.menu__header__title {
+  font-style: italic;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  line-height: 41px;
+  margin-right: 25px;
+}
+.menu .fa-xl {
+  line-height: normal;
+}
+.menu .checked {
+  display: none;
+}
+.menu .checkbox {
+  display: none;
+}
+.menu .checkbox:checked ~ .checked {
+  display: inline-block;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.menu .checkbox:checked ~ .unchecked {
+  display: none;
+}
+.menu .meal {
+  padding-top: 40px;
+  max-width: 635px;
+  min-width: 350px;
+  margin: 0 auto;
+  animation: appear 3s;
+}
+.menu .meal__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.menu .meal__border {
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+.menu .meal__block {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.menu .meal__block__title {
+  padding: 12px 0 0 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu .meal__block__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 0 15px 12px 15px;
+}
+.menu .meal__block__description__text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu .meal__block__description__price {
+  font-weight: bold;
+}
+.menu .meal .unchecked {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+.menu .meal .checked_ {
+  display: none;
+}
+.menu .meal .custom-checkbox_2 {
+  overflow: hidden;
+  position: relative;
+}
+.menu .meal .checked_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  color: #fff;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  overflow: hidden;
+  transition: all 400ms;
+  translate: 100% 0;
+}
+.menu .meal .unchecked {
+  margin: 0;
+  transition: all 400ms;
+}
+.menu .meal .checkbox_2 {
+  display: none;
+}
+.menu .meal .checkbox_2:checked ~ .unchecked {
+  margin-right: 60px;
+}
+.menu .meal .checkbox_2:checked ~ .checked_2 {
+  translate: 0;
+}
+.menu .btn {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px 50px;
+  margin: 40px auto 0 auto;
+  border-radius: 25px;
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 400ms;
+}
+.menu .btn:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  opacity: 0.75;
+}
+
+.img_restaurant {
+  background-size: cover;
+  background-position: center;
+  height: 375px;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header_block {
+    box-shadow: none;
+  }
+}

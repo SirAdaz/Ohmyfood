@@ -5,54 +5,33 @@
 
 // Start here.. [!Important (1.0.0.0.0)] [Inline CSS (0.1.0.0.0)] [#ID (0.0.1.0.0)] [.class (0.0.0.1.0)] [tag (0.0.0.0.1)]
 
-// ALL PART
-html{
-    font-family: 'Roboto', sans-serif;
-}
-a{
-    cursor: pointer;
-    text-decoration: none;
-}
-footer{
-    background-color: #353535;
-    color: $white;
-    padding: 20px;
-}
-
-.boutton{
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    padding: 15px;
-    border-radius: 25px;
-    color: $white;
-    transition: all-- 400ms;
-      &:hover {
-        transform: scale(1.15);
-        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
-        ;
-      }
-}
 // HEADER PART
-.logo_header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+// HEADER PART
+.header{
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0 5px 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 .location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #EAEAEA;
-    font-weight: bold;
-        i{
-            padding-right: 15px;
-        }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        padding: 15px;
+            &__icon{
+                padding-right: 15px;
+            }
+    }
 }
 
 // NAV PART
-.explore_restaurants{
-    background-color: $background;
+.explore{
     display: flex;
     padding: 30px;
     flex-direction: column;
@@ -63,28 +42,33 @@ footer{
 
 // EXPLANATION PART
 .explanation{
-    margin: 50px 0 25px 20px;
-    .panels{
-        background-color: $background;
-        display: flex;
-        align-items: center;
-        border-radius: 20px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        margin: 10px 20px 25px 10px;
-        .panels_number{
-            background-color: $primary;
-            color: $white;
+    &__title{
+        margin: 50px 0 0 20px;
+    }
+    &__panels{
+        margin: 0 0 25px 20px;
+        &__unitary{
+            background-color: $background;
             display: flex;
             align-items: center;
-            justify-content: center;
-            border-radius: 24px;
-            height: 24px;
-            width: 24px;
-            margin-left: -10px;
-        }
-        .panels_icon{
-            color: $primary;
-            margin: 23px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            margin: 10px 20px 25px 10px;
+            &__number{
+                background-color: $primary;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 24px;
+                height: 24px;
+                width: 24px;
+                margin-left: -10px;
+            }
+            &__icon{
+                color: $primary;
+                margin: 23px;
+            }
         }
     }
 }
@@ -93,95 +77,128 @@ footer{
 .restaurant{
     display: flex;
     flex-direction: column;
-    background-color: $background;
-    .title_restaurant{
-       padding: 20px 0 0 20px;
+    padding: 0 20px;
+    &__title{
+        padding-top: 20px;
     }
-    .restaurant_choice{
+    &__choice{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 60px;
-    }
-    .container_panel_restaurant{
-        background-color: $white;
-        border-radius: 15px;
-        margin: 17px 17px 0 17px;
-    }
-    .img_restaurant_1{
-        background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0;
-        height: 120px;
-        width: 100%;
-        margin: 0;
-    }
-    .img_restaurant_2{
-        background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0;
-        height: 120px;
-        width: 100%;
-        margin: 0;
-    }
-    .img_restaurant_3{
-        background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0;
-        height: 150px;
-        width: 100%;
-        margin: 0;
-    }
-    .img_restaurant_4{
-        background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0;
-        height: 120px;
-        width: 100%;
-        margin: 0;
-    }
-    .description_block{
-        display: flex;
-        justify-content: space-between;
-        padding: 13px;
-    }
-    .restaurant_heart{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-// FOOTER PART
-.logo_footer{
-    color: $white;
-}
-.footer_link_block{
-    display: flex;
-    flex-direction: column;
-    .footer_link{
-        padding: 7px;
-        .footer_icon{
-            padding-right: 10px;
+        &__container{
+            position: relative;
+            background-color: $white;
+            border-radius: 15px;
+            margin-top: 17px;
+            &__panel{
+                &__new{
+                    position: absolute;
+                    background-color: $Tertiary;
+                    color: #008766;
+                    right: 15px;
+                    top: 15px;
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 2px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+                    &__text{
+                        display: flex;
+                        justify-content: center;
+                        margin: 6px 0px 0px 0px;
+                    }
+                }
+                &__img{
+                    background-size: cover;
+                    background-position: center 70%;
+                    border-radius: 15px 15px 0 0;
+                    height: 150px;
+                    width: auto;
+                    margin: 0;
+                }
+                &__description{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 13px;
+                    &__places{
+                        margin: 5px 0 5px 0;
+                    }
+                    .fa-xl{
+                        line-height: normal;
+                    }
+                    .custom-checkbox{
+                        margin: 5px;
+                    }
+                    .checked{
+                        display: none;
+                    }
+                    .checkbox{
+                        display: none;
+                        &:checked~.checked{
+                            display: inline-block;
+                            background-image: linear-gradient($primary, $secondary);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent; 
+                            -moz-background-clip: text;
+                            -moz-text-fill-color: transparent;
+                        }
+                        &:checked~.unchecked{
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 
 // ##### MEDIA QUERIES ##### //
+
 // Tablets (sm) //
 @media screen and (min-width: 768px) {
-  
+    // HEADER PART
+    .logo_header{
+        box-shadow: none;
+    }
+
+    // NAV PART
+    .explore__title{
+        font-size: 40px;
+    }
+    .explore__description{
+        margin: 18px;
+    }
+
+    // EXPLANATION PART
+    .explanation__panels{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        &__unitary{
+            max-width: 30%;
+            flex: 0 0 30%;
+        }
+    }
+
+    // RESTAURANT PART
+    .restaurant__choice{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        &__container{
+            margin: 30px 0 20px 0;
+            max-width: 45%;
+            flex: 0 0 45%;
+        }
+    }
 }
-// Laptops (md) //
-@media screen and (min-width: 992px) {
-  
-}
+
 // Desktops (lg) //
 @media screen and (min-width: 1200px) {
-  
+    // RESTAURANT PART
+    .restaurant__choice__container__panel__img{
+        height: 220px;
+    }
 }

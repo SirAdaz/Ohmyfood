@@ -13,106 +13,147 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 		<!-- <link rel="icon" type="image/png" href="img/icon.png"/> -->
 		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/style.css"/>
 		<title>ohmyfood</title>
 	</head>
 	<body>
-		<header>
-			<a class="logo_header"><img src="img/logo/ohmyfood@2x.svg"></a>
-			<a class="location">
-				<i class="fa-solid fa-location-dot"></i>
-				<p>Paris, Belleville</p>
-			</a>
+		<header class="header">
+			<div class="container"><a class="header__logo" href="index.html"><img src="img/logo/ohmyfood@2x.svg"></a></div>
+			<div class="location">	
+				<div class="container">
+					<a class="location__link" href="#">
+						<i class="fa-solid fa-location-dot location__link__icon"></i>
+						<p>Paris, Belleville</p>
+					</a>
+				</div>
+			</div>
 		</header>
-		<nav class="explore_restaurants">
-			<h2>Réservez le menu qui vous convient</h2>
-			<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-			<a class="boutton">Explorer nos restaurants</a>
+		<nav class="background">
+			<div class="container">
+				<div class="explore">
+					<h1 class="explore__title">Réservez le menu qui vous convient</h1>
+					<p class="explore__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+					<button class="btn">Explorer nos restaurants</button>
+				</div>
+			</div>
 		</nav>
-		<section class="explanation">
-			<h2>Fonctionnement</h2>
-			<div class="panels">
-				<div class="panels_number">
-					<p>1</p>
-				</div>
-				<i class="fa-solid fa-mobile-screen-button panels_icon"></i>
-				<p>Choisissez un restaurant</p>
-			</div>
-			<div class="panels">
-				<div class="panels_number">
-					<p>2</p>
-				</div>
-				<i class="fa-solid fa-list panels_icon"></i>
-				<p>Composez votre menu</p>
-			</div>
-			<div class="panels">
-				<div class="panels_number">
-					<p>3</p>
-				</div>
-				<i class="fa-solid fa-store panels_icon"></i>
-				<p>Dégustez au restaurant</p>
-			</div>
-		</section>
-		<section class="restaurant">
-			<h2 class="title_restaurant">Restaurants</h2>
-			<div class="restaurant_choice">
-				<div class="container_panel_restaurant">
-					<a class="panel_restaurant" href="#">
-						<div class="img_restaurant_1" >	</div>
-						<div class="description_block">
-							<div class="description">
-								<h3>La palette du goût</h3>
-								<p>Ménilmontant</p>
+		<section>
+			<div class="container">
+				<div class="explanation">
+					<h2 class="explanation__title">Fonctionnement</h2>
+					<div class="explanation__panels">
+						<div class="explanation__panels__unitary">
+							<div class="explanation__panels__unitary__number">
+								<p>1</p>
 							</div>
-							<i class="fa-regular fa-heart fa-xl restaurant_heart"></i>
+							<i class="fa-solid fa-mobile-screen-button explanation__panels__unitary__icon"></i>
+							<p>Choisissez un restaurant</p>
 						</div>
-					</a>
-				</div>
-				<div class="container_panel_restaurant">
-					<a class="panel_restaurant" href="#">
-						<div class="img_restaurant_2" >	</div>
-						<div class="description_block">
-							<div class="description">
-								<h3>La note enchantée</h3>
-								<p>Charonne</p>
+						<div class="explanation__panels__unitary">
+							<div class="explanation__panels__unitary__number">
+								<p>2</p>
 							</div>
-							<i class="fa-regular fa-heart fa-xl restaurant_heart"></i>
+							<i class="fa-solid fa-list explanation__panels__unitary__icon"></i>
+							<p>Composez votre menu</p>
 						</div>
-					</a>
-				</div>
-				<div class="container_panel_restaurant">
-					<a class="panel_restaurant" href="#">
-						<div class="img_restaurant_3" >	</div>
-						<div class="description_block">
-							<div class="description">
-								<h3>À la française</h3>
-								<p>Cité Rouge</p>
+						<div class="explanation__panels__unitary">
+							<div class="explanation__panels__unitary__number">
+								<p>3</p>
 							</div>
-							<i class="fa-regular fa-heart fa-xl restaurant_heart"></i>
+							<i class="fa-solid fa-store explanation__panels__unitary__icon"></i>
+							<p>Dégustez au restaurant</p>
 						</div>
-					</a>
-				</div>
-				<div class="container_panel_restaurant">
-					<a class="panel_restaurant" href="#">
-						<div class="img_restaurant_4" >	</div>
-						<div class="description_block">
-							<div class="description">
-								<h3>Le délice des sens</h3>
-								<p>Folie-Méricourt</p>
-							</div>
-							<i class="fa-regular fa-heart fa-xl restaurant_heart"></i>
-						</div>
-					</a>
+					</div>
 				</div>
 			</div>
 		</section>
-		<footer>
-			<a><img class="logo_footer" src="img/logo/ohmyfood@2x.svg"></a>
-			<div class="footer_link_block">
-				<a class="footer_link"><i class="fa-solid fa-utensils fa-xs footer_icon"></i>Proposer un restaurant</a>
-				<a class="footer_link"><i class="fa-solid fa-handshake-angle fa-xs footer_icon"></i>Devenir partenaire</a>
-				<a class="footer_link">Mentions légales</a>
-				<a class="footer_link">Contact</a>
+		<section class="background">
+			<div class="container">
+				<div class="restaurant"> 
+					<h2 class="restaurant__title">Restaurants</h2>
+					<div class="restaurant__choice">
+						<div class="restaurant__choice__container">
+							<a class="restaurant__choice__container__panel" href="LaPaletteDuGout.html">
+								<div class="restaurant__choice__container__panel__new"><p class="restaurant__choice__container__panel__new__text">Nouveau</p></div>
+								<div id="img_restaurant_1" class="restaurant__choice__container__panel__img">	</div>
+								<div class="restaurant__choice__container__panel__description">
+									<div>
+										<h3>La palette du goût</h3>
+										<p class="restaurant__choice__container__panel__description__places">Ménilmontant</p>
+									</div>
+									<label class="custom-checkbox">
+										<input type="checkbox" class="checkbox"/>
+										<i class="fa-regular fa-heart fa-xl restaurant_heart unchecked"></i>
+										<i class="fa-solid fa-heart fa-xl restaurant_heart_solid checked"></i>
+									</label>
+								</div>
+							</a>
+						</div>
+						<div class="restaurant__choice__container">
+							<a class="restaurant__choice__container__panel" href="LaPaletteDuGout.html">
+								<div class="restaurant__choice__container__panel__new"><p class="restaurant__choice__container__panel__new__text">Nouveau</p></div>
+								<div id="img_restaurant_2" class="restaurant__choice__container__panel__img">	</div>
+								<div class="restaurant__choice__container__panel__description">
+									<div>
+										<h3>La note enchantée</h3>
+										<p class="restaurant__choice__container__panel__description__places">Charonne</p>
+									</div>
+									<label class="custom-checkbox">
+										<input type="checkbox" class="checkbox"/>
+										<i class="fa-regular fa-heart fa-xl restaurant_heart unchecked"></i>
+										<i class="fa-solid fa-heart fa-xl restaurant_heart_solid checked"></i>
+									</label>
+								</div>
+							</a>
+						</div>
+						<div class="restaurant__choice__container">
+							<a class="restaurant__choice__container__panel" href="LaPaletteDuGout.html">
+								<div class="restaurant__choice__container__panel__new"><p class="restaurant__choice__container__panel__new__text">Nouveau</p></div>
+								<div id="img_restaurant_3" class="restaurant__choice__container__panel__img">	</div>
+								<div class="restaurant__choice__container__panel__description">
+									<div>
+										<h3>À la française</h3>
+										<p class="restaurant__choice__container__panel__description__places">Cité Rouge</p>
+									</div>
+									<label class="custom-checkbox">
+										<input type="checkbox" class="checkbox"/>
+										<i class="fa-regular fa-heart fa-xl restaurant_heart unchecked"></i>
+										<i class="fa-solid fa-heart fa-xl restaurant_heart_solid checked"></i>
+									</label>
+								</div>
+							</a>
+						</div>
+						<div class="restaurant__choice__container">
+							<a class="restaurant__choice__container__panel" href="LaPaletteDuGout.html">
+								<div class="restaurant__choice__container__panel__new"><p class="restaurant__choice__container__panel__new__text">Nouveau</p></div>
+								<div id="img_restaurant_4" class="restaurant__choice__container__panel__img">	</div>
+								<div class="restaurant__choice__container__panel__description">
+									<div>
+										<h3>Le délice des sens</h3>
+										<p class="restaurant__choice__container__panel__description__places">Folie-Méricourt</p>
+									</div>
+									<label class="custom-checkbox">
+										<input type="checkbox" class="checkbox"/>
+										<i class="fa-regular fa-heart fa-xl restaurant_heart unchecked"></i>
+										<i class="fa-solid fa-heart fa-xl restaurant_heart_solid checked"></i>
+									</label>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<a href="index.html" class="footer__link""><img class="footer__link__logo" src="img/logo/ohmyfood@2x.svg"></a>
+				<div class="footer__block">
+					<a class="footer__block__link" href="#"><i class="fa-solid fa-utensils fa-xs footer__block__link__icon"></i>Proposer un restaurant</a>
+					<a class="footer__block__link" href="#"><i class="fa-solid fa-handshake-angle fa-xs footer__block__link__icon"></i>Devenir partenaire</a>
+					<a class="footer__block__link" href="#">Mentions légales</a>
+					<a class="footer__block__link" href="mailto:contact@ohmyfood.com">Contact</a>
+				</div>
 			</div>
 		</footer>
 	</body>

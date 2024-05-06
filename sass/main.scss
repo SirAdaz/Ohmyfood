@@ -1,0 +1,100 @@
+// GLOBALS
+@import "_globals.scss";
+
+
+
+// Start here.. [!Important (1.0.0.0.0)] [Inline CSS (0.1.0.0.0)] [#ID (0.0.1.0.0)] [.class (0.0.0.1.0)] [tag (0.0.0.0.1)]
+html{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+p{
+    margin: 0;
+}
+
+#container{
+    max-width: 800px;
+}
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.background{
+    background-color: $background;
+}
+.btn{
+    background: linear-gradient($secondary, $primary);
+    padding: 15px;
+    border-radius: 25px;
+    color: $white;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 400ms;
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        opacity: 0.75;
+      }
+}
+
+#img_restaurant_1{
+    background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+#img_restaurant_2{
+    background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+#img_restaurant_3{
+    background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+#img_restaurant_4{
+    background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+// FOOTER PART
+.footer{
+    background-color: #353535;
+    color: $white;
+    padding: 20px;
+    &__link__logo{
+        filter: invert(1);
+        height: 20px;
+        width: auto;
+        margin: 5px 0 15px 0;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        &__link{
+            color: $white;
+            padding: 7px 0 7px 0;
+            &__icon{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // FOOTER PART
+    .footer__link{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__block{
+        flex-direction: row;
+        justify-content: center;
+        &__link{
+            margin: 10px;
+        }
+    }
+}
+// Desktops (lg) //
+@media screen and (min-width: 1200px) {
+    #container {
+      max-width: 1055px;
+    }
+  }
